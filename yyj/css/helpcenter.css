@@ -1,0 +1,113 @@
+.help {
+    BORDER: #dcdcdc 1px solid;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    position: relative;
+    z-index: -1;
+    float: left;
+}
+
+.help .A {
+	float: left;
+    WIDTH: 186px;
+    POSITION: relative;
+    border-right: #dcdcdc 1px solid;
+    height: 570px;
+	z-index: 0;
+}
+.help .A UL {
+    DISPLAY: block;
+    PADDING-TOP: 135px;
+}
+.help .A UL LI {
+    DISPLAY: block;
+}
+.help .A UL LI A {
+    LINE-HEIGHT: 20px;
+    PADDING-LEFT: 8px;
+    DISPLAY: block;
+    HEIGHT: 20px;
+}
+.help .A UL LI A:hover {
+    BACKGROUND: url(/images/arrow_01.png) #eee no-repeat 98% 50%;
+    COLOR: #aa0009;
+    TEXT-DECORATION: none;
+}
+.help .A DL {
+    POSITION: absolute;
+    PADDING-BOTTOM: 8px;
+    PADDING-LEFT: 8px;
+    WIDTH: 170px;
+    BOTTOM: 0px;
+    PADDING-RIGHT: 8px;
+    DISPLAY: block;
+    BACKGROUND: #f2f2f2;
+    PADDING-TOP: 8px;
+    LEFT: 0px;
+  
+}
+
+.help .A DL DT {
+    PADDING-BOTTOM: 4px;
+    DISPLAY: block;
+}
+.help .A DL DD {
+    DISPLAY: block;
+    HEIGHT: 20px;
+}
+.help .A DL DD SPAN {
+    DISPLAY: block;
+    FLOAT: left;
+    HEIGHT: 20px;
+}
+.help .A DL DD SPAN .textbox {
+    BORDER-BOTTOM: #c5c5c5 1px solid;
+    BORDER-LEFT: #c5c5c5 1px solid;
+    PADDING-BOTTOM: 0px;
+    MARGIN: -1px 0px;
+    PADDING-LEFT: 0px;
+    WIDTH: 140px;
+    PADDING-RIGHT: 0px;
+    BACKGROUND: #fff;
+    HEIGHT: 18px;
+    BORDER-TOP: #c5c5c5 1px solid;
+    BORDER-RIGHT: #c5c5c5 1px solid;
+    PADDING-TOP: 0px;
+}
+.help .B {
+	float: left;
+    WIDTH: 250px;
+    HEIGHT: 570px;
+    POSITION: relative;
+    BORDER-RIGHT: #dcdcdc 1px solid;
+    float: left;
+}
+.help .B UL {
+    PADDING-BOTTOM: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    PADDING-TOP: 4px;
+}
+.help .B UL LI A {
+    LINE-HEIGHT: 20px;
+    PADDING-LEFT: 8px;
+    DISPLAY: block;
+    HEIGHT: 20px;
+}
+.help .B UL LI A{
+    BACKGROUND: url(../images/arrow_01.png) #eee no-repeat 98% 50%;
+    COLOR: #aa0009;
+    TEXT-DECORATION: none;
+}
+.help .C {
+    WIDTH: 750px;
+    float: left;
+    
+}
+.help .C P {
+    PADDING-BOTTOM: 8px;
+    PADDING-LEFT: 8px;
+    PADDING-RIGHT: 8px;
+    PADDING-TOP: 8px;
+}

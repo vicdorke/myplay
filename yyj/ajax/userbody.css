@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+/*公共样式*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+fieldset,
+img {
+	border: none;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+body {
+	color: #333;
+	padding: 0;
+	font: 12px/20px 'microsoft yahei', '微软雅黑', Helvetica, Arial, Tahoma, "黑体", '宋体';
+	background: #fff;
+	position: relative;
+}
+
+a {
+	color: #666;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #666;
+}
+
+a:hover{
+	color: #C82324;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	border-right: 2px solid #000;
+}
+
+.clearBoth {
+	clear: both;
+	width: 100%;
+	height: 0px;
+	overflow: hidden;
+}
+
+
+
+/*<!--中间内容部分开始-->*/
+.content{
+	width: 100%;
+	min-height: 100px;
+}
+.content1{
+	width:100%;
+	
+	/*background-color: yellow;*/
+	min-height: 300px;
+	
+}
+/*个人中心左边列表开始*/
+.content1_left{
+	width: 208px;
+	min-height: 96px;
+	height: auto;
+	border:1px solid #CCCCCC;
+	float: left;
+	background-color: #FFFFFF;
+}
+.userList li{
+	background: #EDEDED;
+}
+.userList>li>a{
+	background-color: #F8F8F8;
+	display: block;
+	width: 100%;
+    height: 32px;
+	font: 14px/32px "微软雅黑";
+    text-align: center;
+}
+
+.userList li .userListMenu>li>a {
+    font-size: 13px;
+    line-height: 30px;
+    color: #333;
+	text-align: center;
+    width: 100%;
+    height: 30px;
+    display: block;
+}
+.userList li .userListMenu>li>a:hover{
+	color: firebrick;
+	background-color: white;
+}
+/*个人中心左边显示隐藏开始*/
+.content1_right{
+	width: 968px;
+	min-height: 332px;
+	margin-left: -1px;
+	height: auto;
+	border:1px solid #CCCCCC;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/*我的订单开始*/
+.mylist0,.mylist3,.mylist1,.mylist2,.mylist4,.mylist5,.mylist6,
+.mylist7,.mylist8,.mylist9,.mylist10,.mylist11,
+.mylist12,.mylist13,.mylist14,.mylist15,.mylist16,
+.mylist17,.mylist18{
+	width: 100%;
+	min-height: 340px;
+}
+.mylist3,.mylist1,.mylist2,.mylist4,.mylist5,.mylist6,
+.mylist7,.mylist8,.mylist9,.mylist10,.mylist11,
+.mylist12,.mylist13,.mylist14,.mylist15,.mylist16,
+.mylist17,.mylist18{
+	display: none;
+}
+.order_tit,.order_input{
+	height: 37px;
+	width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+.order_tit span{
+	display: block;
+    width: 68px;
+    height: 35px;
+    border-bottom: 2px solid #cf0101;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: 600;
+}
+.order_input{
+	margin-top: 30px;
+	position: relative;
+}
+.order_input>input{
+	width: 200px;
+	height: 25px;
+	line-height: 25px;
+	position: absolute;
+	right: 70px;
+	top:0px
+}
+.order_input>button{
+	width: 71px;
+	height: 29px;
+	line-height: 25px;
+	position: absolute;
+	right: 0px;
+	top:0px;
+	background-color: #C82324;
+	border:0;
+	color: #FFFFFF;
+	outline: 0;
+	cursor: pointer;
+}
+.order_input {
+	border-bottom: none;
+}
+.orderStatusTab{
+	width: 100%;
+	height: 28px;
+	border-bottom: 2px solid red;
+}
+.orderStatusTab>ul>li>a{
+	font-weight: 500;
+	display: inline-block;
+	float: left;
+	padding: 5px 30px;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;	
+	height: 18px;
+    text-align: center;
+
+}
+.active{
+	color: black;
+	background-color: #EDEDED;
+	font-weight: 700;
+}
+.orderStatusTab2{
+	height: 32px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: #F2F2F2;
+	line-height: 32px;
+}
+.orderStatusTab2>ul>li{
+	float: left;
+	text-align: center;
+}
+.orderStatusTab2_1{
+	width: 100%;
+	min-height: 10px;
+}
+.orderStatusTab2_kong{
+	width: 100%;
+	min-height: 100px;
+	text-align: center;
+	margin-top: 50px;
+}
+.orderStatusTab2_kong>button{
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	background-color: #D00000;
+	color: #FFFFFF;
+	border: none;
+}
+.orderStatusTab2_kong>h2{
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.clearBoth{
+	clear: both;
+	width: 100%;
+	height: 0px;
+	overflow: hidden;
+}
+/*收藏商品*/
+/*修改密码部分*/
+.mylist9_c{
+	width: 400px;
+	margin: 50px auto;
+}
+.mylist9_c1{
+	float: left;
+	width: 100px;
+	height: 30px;
+}
+.mylist9_c1>p{
+	text-align: right;
+	height: 36px;
+	line-height: 36px;
+}
+.mylist9_c2{
+	float: left;
+	width: 290px;
+	height: 30px;
+	margin-left: 10px;
+}
+.mylist9_c2>input{
+	width:60% ;
+	height: 24px;
+	margin-top: 7px;
+}
+/*修改密码结束*/
+		
+/*<!--中间内容部分结束-->*/

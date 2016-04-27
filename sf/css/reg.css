@@ -1,0 +1,202 @@
+@charset "UTF-8";
+*{margin: 0;padding: 0;}
+body {height:100%;margin:0 auto;background: #F5F5F5;color:#666666;font: 12px/150% Arial,Verdana,"宋体";}
+ol,ul{list-style:none;}
+img{border:0;}
+a{text-decoration:none;color:#666666;}
+a:hover{text-decoration:none;color:#76AB25;}
+a.red{color:#FA6400;}
+.regcont {
+	width: 1000px;
+	background: #FFFFFF;
+	margin: 0 auto;
+	margin-top: 56px;
+	border-top: 1px solid #D6D5D5;
+}
+
+.entry1 {
+	position: absolute;
+	top: 110px;
+	left: 1300px;
+	width: 200px;
+}
+
+.entry1 a {
+	color: green;
+}
+
+.reg1 {
+	width: 404px;
+	margin-left: 24%;
+}
+
+.gryh {
+	position: absolute;
+	top: 98px;
+	left: 45%;
+}
+
+.regfoot {
+	margin: 0 auto;
+	width: 431px;
+}
+
+.regright {
+	float: right;
+}
+
+.regForm_mod {
+	width: 506px;
+	height: 412px;
+	float: left;
+	position: relative;
+}
+
+.regForm_mod span {
+	color: #EA5404;
+	font-size: 10px;
+}
+
+.regForm_mod div {
+	position: absolute;
+	font-size: 15px;
+}
+
+.account {
+	width: 350px;
+	height: 42px;
+	top: 40px;
+	left: 80px;
+}
+
+.password {
+	width: 360px;
+	height: 44px;
+	top: 107px;
+	left: 70px;
+}
+
+.repassword {
+	width: 360px;
+	height: 40px;
+	top: 191px;
+	left: 70px;
+}
+
+.code {
+	width: 350px;
+	height: 40px;
+	left: 80px;
+	top: 255px;
+}
+
+.regForm_mod input {
+	width: 268px;
+	height: 35px;
+	outline-color: green;
+	border:1px solid #CDCDCD ;
+}
+
+.regForm_mod .code input {
+	width: 68px;
+	height: 35px;
+}
+
+.code img {
+	margin-left: 10px;
+	position: absolute;
+}
+
+.code a {
+	color: green;
+}
+
+.code p {
+	position: absolute;
+	display: inline-block;
+	left: 250px;
+	top: 10px;
+	font-size: 10px;
+}
+
+.reg2 {
+	width: 273px;
+	height: 75px;
+	top: 338px;
+	left: 150px;
+}
+
+.reg2 input {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 2px;
+}
+
+.reg2 div {
+	width: 273px;
+	height: 36px;
+	background: green;
+	text-align: center;
+	margin-bottom: 32px;
+	line-height: 36px;
+	color: white;
+	margin-top: 18px;
+}
+.account1{
+	position: absolute;
+	top: 190px;left:893px;
+	font-size: 12px;
+	display: none;
+}
+.account2{
+	position: absolute;
+	top: 190px;left:893px;
+	font-size: 12px;
+	display: none;
+	color: red;
+}
+.account3{
+	position: absolute;
+	top: 185px;left:830px;
+	display: none;
+	z-index: 2;
+}
+.password1{
+	position: absolute;
+	top: 245px;left:893px;
+	font-size: 12px;
+	display: none;
+}
+.password2{
+	position: absolute;
+	top: 245px;left:893px;
+	font-size: 12px;
+	display: none;
+	color: red;
+}
+.password3{
+	position: absolute;
+	top: 255px;left:830px;
+	display: none;
+	z-index: 2;
+}
+.repassword1{
+	position: absolute;
+	top: 340px;left:893px;
+	font-size: 12px;
+	display: none;
+}
+.repassword2{
+	position: absolute;
+	top: 340px;left:893px;
+	font-size: 12px;
+	display: none;
+	color: red;
+}
+.repassword3{
+	position: absolute;
+	top: 335px;left:830px;
+	display: none;
+	z-index: 2;
+}

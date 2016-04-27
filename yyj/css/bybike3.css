@@ -1,0 +1,25 @@
+#centercont{
+	MARGIN: 8px auto;
+    WIDTH: 1200px;
+    clear: both;
+    margin-top: 10px;
+}
+
+#centercont img{
+	width: 600px;
+	margin-left: 300px;
+}
+#close{
+	width: 100px;
+	height: 100px;
+	outline: 0;
+	border: 0;
+	cursor: pointer;
+	background: url(../images/lan.png) no-repeat 0 0;
+}
+#close:hover{background: url(../images/lan.png) no-repeat -120px 0;}
+#flower{
+	border-radius: 5px;
+	background: url(../images/flower.gif);
+}
+

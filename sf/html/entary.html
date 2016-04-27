@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>登录</title>
+		<meta name="Keywords" content="顺丰电子商务,顺丰速运,顺丰快递,">
+		<link rel="stylesheet" type="text/css" href="../css/headerfooterindex.css">
+		<link rel="stylesheet" type="text/css" href="../css/login.css">
+		<script type="text/javascript" src="../js/jquery.js"></script>
+	</head>
+
+<body>
+<!-- header -->
+<div class="header">
+	<a href="../index.html"><img src="../images/logo.png" border="0"><span>欢迎登录</span></a>
+</div>
+<!-- login_main -->
+<div class="login_main clear">
+	<div class="pic">
+		<a href="http://www.sfbest.com/html/activity/1451358639.html" target="_blank"><img src="../images/df41facbbf4da531c58f8c2bee4dbe40.jpg" /></a>
+	</div>
+	<!-- login -->
+	<div class="login">
+		<div class="login_header">
+			<span>您还未登录</span>
+			<a href="reg.html">免费注册</a>
+		</div>
+
+		<div class="login_box clear">
+			<ul class="loginnav">
+				<li class="curr" mark="sfbest"><em></em>优选账号</li>
+				<li class="npay" mark="sfpay"><em></em>顺手付账号</li>
+				<li class="nexpress bordernone" mark="sfexp"><em></em>速运账号</li>
+			</ul>
+
+			<div class="logincon">
+
+				<ul>
+					<form id="fm1" action="/cas/login?embed=true&amp;code=0&amp;service=http%3A%2F%2Fpassport.sfbest.com%2F" method="post">
+						<div style="display:none;">
+
+						</div>
+						<li style="display:none;"><span class="title">BGCode</span>
+							<span class="border">
+						     <input type="hidden" name="bgcode" id="bgcode" value="sfbest" class="loginText">
+						        <em class="icon1" id="bgcode_em"></em>
+							
+							</span>
+							<span id="uNameErr"></span>
+						</li>
+						<li><span class="title">手机/验证邮箱/用户名<font style="padding-left:20px" class="error_line" color="#ff0000"></font></span>
+							<span class="border" style="position:relative">
+<input id="username" name="username" type="hidden" accesskey="n" value="" size="25" autocomplete="off">
+<input class="new-input1 new-color" tabindex="1" data-clear-btn="true" id="loginname" size="25" autocomplete="off" htmlescape="true" title="请输入手机号码">
+		
+						
+						     <em class="icon1" id="usernamelogo"></em>
+						<span style="position: absolute; font-size: 14px; left: 5px; top: 9px;display:none;" class="sfbest_username_place">请输入手机号/邮箱/用户名</span>
+							</span>
+							<span id="sfbestNameErr"></span>
+
+						</li>
+
+						<li class="m-t12">
+							<span class="title">登录密码</span>
+							<span class="border" style="position:relative">
+								<input id="password" name="password" class="required" tabindex="2" type="password" value="" autocomplete="off">
+							    <em class="icon2" id="passwordlogo"></em>
+						<span style="position: absolute; font-size: 14px; left: 5px; top: 9px;display:none;" class="sfbest_password_place">密码</span>
+							</span>
+							<span id="sfbestPwdErr"></span>
+						</li>
+						<li id="shosCode" class="scode" style="overflow:hidden;">
+							<input type="text" name="vcode" id="vcode" tabindex="4" onkeypress="if(event.keyCode == 13) login();" class="code loginText floatleft" maxlength="4" onkeyup="ck_lgpCode(0,1)" onblur="ck_lgpCode(0,0)" onfocus="showComCode()">
+
+							<img id="imgcode" src="../images/vcode.jpg" onclick="this.src='vcode?a='+Math.random();" width="106" height="36" border="0" class="code_img floatleft" title="看不清？点一下！" alt="看不清？点一下！">
+							<div class="code_spec"> <span id="sfbestCodeErr"></span></div>
+							<input type="hidden" value="123" id="scode">
+						</li>
+						<div class="clear"></div>
+						<li>
+							<div style="width: 65px; margin-left: 260px;">
+								<a href="https://passport.sfbest.com/reg/findpass/?returnUrl=http://www.t.com" class="forget-passWord">忘记密码?</a>
+							</div>
+						</li>
+						<li class="m-t5" id="btn_sub">
+							<input type="hidden" name="lt" value="LT-239783-tU5VZCXw0EeVif155RaaJQ1bAZ2zGb-sfbest">
+							<input type="hidden" name="execution" value="fda312c9-b925-4f52-9de5-7eebbc7b7f6b_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">
+							<input type="hidden" name="_eventId" value="submit">
+
+							<a href="javascript:void(0)" onclick="sfbestSubmit()" id="login_sub" class="login_btn" style="background: green;">登录</a>
+						</li>
+						<div>
+						</div>
+					</form>
+				</ul>
+
+				<ul style="display: none">
+					<form id="fm2" action="/cas/login?embed=true&amp;code=0&amp;service=http%3A%2F%2Fpassport.sfbest.com%2F" method="post">
+						<li style="display:none;"><span class="title">BGCode</span>
+							<span class="border">
+						     <input type="text" name="bgcode" id="bgcode" value="sfpay" class="loginText">
+						        <em class="icon1" id="bgcode"></em>
+							</span>
+							<span id="uNameErr"></span>
+						</li>
+						<li>
+							<span class="title">手机号<font style="padding-left:20px" class="error_line" color="#ff0000"></font></span>
+							<span class="border" style="position:relative">
+								
+									
+									
+										
+										<input id="username" name="username" class="required" tabindex="2" accesskey="n" type="text" value="" size="25" autocomplete="off">
+									
+								
+								<em class="icon1" id="usernamelogo"></em> 
+							<span style="position: absolute; font-size: 14px; left: 5px; top: 9px;display:none;" class="sfpay_username_place">请输入手机号</span>
+							</span>
+							<span id="sfpayNameErr"></span>
+						</li>
+						<li class="m-t12">
+							<span class="title">登录密码</span>
+							<span class="border" style="position:relative">
+								<input id="password" name="password" class="required" tabindex="3" type="password" value="" autocomplete="off">
+								<em class="icon2" id="passwordlogo"></em>
+								<span style="position: absolute; font-size: 14px; left: 5px; top: 9px;display:none;" class="sfpay_password_place">密码</span>
+							</span>
+							<span id="sfpayPwdErr"></span>
+						</li>
+						<li id="shosCode" class="scode" style="overflow:hidden;">
+							<input type="text" name="vcode" id="vcode" tabindex="4" onkeypress="if(event.keyCode == 13) login();" class="code loginText floatleft" maxlength="4" onkeyup="ck_lgpCode(0,1)" onblur="ck_lgpCode(0,0)" onfocus="showComCode()">
+							<img id="imgcode" src="../images/vcode.jpg" onclick="this.src='vcode?a='+Math.random();" width="106" height="36" border="0" class="code_img floatleft" title="看不清？点一下！" alt="看不清？点一下！">
+							<div class="code_spec"><span id="sfpayCodeErr"></span></div>
+							<input type="hidden" value="123" id="scode">
+						</li>
+						<div class="clear"></div>
+						<li>
+							<div style="width: 65px; margin-left: 260px;">
+								<a href="javascript:void(0)" class="forget-passWord"></a>
+							</div>
+						</li>
+						<li class="m-t5" id="btn_sub">
+							<input type="hidden" name="lt" value="LT-239783-tU5VZCXw0EeVif155RaaJQ1bAZ2zGb-sfbest">
+							<input type="hidden" name="execution" value="fda312c9-b925-4f52-9de5-7eebbc7b7f6b_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">
+							<input type="hidden" name="_eventId" value="submit">
+
+							<a href="javascript:void(0)" onclick="sfpaySubmit()" id="login_sub" class="login_btn">登录</a>
+						</li>
+						<li>
+							<div class="login_forget_password" style="color:#515151"> 登录即视为同意<a style="color:#176246" href="https://passport.sfbest.com/lhxy.html" target="_blank">《联合登录授权协议》</a></div>
+						</li>
+						<div>
+						</div>
+					</form>
+				</ul>
+
+				<ul style="display: none">
+					<form id="fm3" action="/cas/login?embed=true&amp;code=0&amp;service=http%3A%2F%2Fpassport.sfbest.com%2F" method="post">
+						<li style="display: none"><span class="title">BGCode</span>
+							<span class="border">
+						     <input type="text" name="bgcode" id="bgcode" value="sfexp" class="loginText">
+						        <em class="icon1" id="bgcode"></em>
+							</span>
+							<span id="NameErr"></span>
+						</li>
+						<li>
+							<span class="title">手机/验证邮箱/用户名<font style="padding-left:20px" class="error_line" color="#ff0000"></font></span>
+							<span class="border" style="position:relative">
+								
+									
+									
+										
+								<input id="username" name="username" tabindex="2" type="hidden" accesskey="n" value="" size="25" autocomplete="off">
+<input class="new-input1 new-color" data-clear-btn="true" id="expname" size="25" tabindex="1" autocomplete="off" htmlescape="true" title="请输入手机号/邮箱/用户名">
+									
+								
+								<em class="icon1" id="usernamelogo"></em>
+								<span style="position: absolute; font-size: 14px; left: 5px; top: 9px;display:none;" class="sfexp_username_place">请输入手机号/邮箱/用户名</span>
+							</span>
+							<span id="sfexpNameErr"></span>
+						</li>
+						<li class="m-t12">
+							<span class="title">登录密码</span>
+							<span class="border" style="position:relative">
+								<input id="password" name="password" class="required" tabindex="3" type="password" value="" autocomplete="off">
+								<em class="icon2" id="passwordlogo"></em>
+								<span style="position: absolute; font-size: 14px; left: 5px; top: 9px;display:none;" class="sfexp_password_place">密码</span>
+							</span>
+							<span id="sfexpPwdErr"></span>
+						</li>
+						<li id="shosCode" class="scode" style="overflow:hidden;">
+
+							<input type="text" name="vcode" id="vcode" tabindex="4" onkeypress="if(event.keyCode == 13) login();" class="code loginText floatleft" maxlength="4" onkeyup="ck_lgpCode(0,1)" onblur="ck_lgpCode(0,0)" onfocus="showComCode()">
+							<img id="imgcode" src="../images/vcode.jpg" onclick="this.src='vcode?a='+Math.random();" width="106" height="36" border="0" class="code_img floatleft" title="看不清？点一下！" alt="看不清？点一下！">
+							<div class="code_spec"><span id="sfexpCodeErr"></span></div>
+
+							<input type="hidden" value="123" id="scode">
+						</li>
+						<div class="clear"></div>
+						<li>
+							<div style="width: 65px; margin-left: 260px;">
+								<a href="javascript:void(0)" class="forget-passWord"></a>
+							</div>
+						</li>
+
+						<li class="m-t5" id="btn_sub">
+							<input type="hidden" name="lt" value="LT-239783-tU5VZCXw0EeVif155RaaJQ1bAZ2zGb-sfbest">
+							<input type="hidden" name="execution" value="fda312c9-b925-4f52-9de5-7eebbc7b7f6b_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">
+							<input type="hidden" name="_eventId" value="submit">
+							<a href="javascript:void(0)" onclick="sfexpSubmit()" id="login_sub" class="login_btn">登录</a>
+						</li>
+						<li>
+							<div class="login_forget_password" style="color:#515151"> 登录即视为同意<a style="color:#176246" href="https://passport.sfbest.com/lhxy.html" target="_blank">《联合登录授权协议》</a></div>
+						</li>
+						<div>
+						</div>
+					</form>
+				</ul>
+			</div>
+
+			<ul class="blink">
+				<li class="p-f10">
+					<h2 class="h2">合作网站账户登录：</h2>
+					<div>
+						<a href="http://api2.sfbest.com/unionlogin/qq/oauth/qq_login.php?returnUrl=http://www.sfbest.com/" class="link">QQ</a>&nbsp;|&nbsp; <a href="https://api.weibo.com/oauth2/authorize?client_id=1800908332&amp;redirect_uri=https%3A%2F%2Fpassport.sfbest.com%2Fcallback%2Fsina&amp;response_type=code&amp;state=&amp;display=?returnUrl=http://www.sfbest.com/"
+						class="link">新浪微博</a> &nbsp;|&nbsp; <a href="https://open.t.qq.com/cgi-bin/oauth2/authorize?client_id=801198099&amp;redirect_uri=https%3A%2F%2Fpassport.sfbest.com%2Fcallback%2Fqq&amp;response_type=code&amp;type=?returnUrl=http://www.sfbest.com/"
+						class="link">腾讯微博</a> &nbsp;|&nbsp; <a href="http://api2.sfbest.com/unionlogin/alipay.php?returnUrl=http://www.sfbest.com/" class="link">支付宝</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<span> <a href="http://www.sfbest.com/www/379/5109.html" rel="nofollow" class="footerlink1">关于我们</a> | <a href="http://www.sfbest.com/www/380/5116.html" rel="nofollow" class="footerlink1">联系我们</a> | <a href="http://www.sfbest.com/www/381/5117.html" rel="nofollow" class="footerlink1">招聘人才</a> | <a href="http://www.sfbest.com/www/330/2705.html" rel="nofollow" class="footerlink1">友情链接</a> | <a href="http://supplier.sfbest.com/supplierApply" rel="nofollow" class="footerlink1">供应商申请</a>
+		</span>
+	<p>
+		北京顺丰电子商务有限公司
+		<br> 北京市公安局顺义分局备案11011302000890号|<a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow" class="footerlink1" se_prerender_url="loading">京ICP备12011349号</a>|<a href="http://www.sfbest.com/www/174/461.html" target="_blank" rel="nofollow" class="footerlink1">企业营业执照</a>
+		<br> Copyright© 顺丰优选 sfbest.com 版权所有
+		<br>
+	</p>
+</div>
+</body>
+<script type="text/javascript" src="../js/entry.js"></script>
+</html>
